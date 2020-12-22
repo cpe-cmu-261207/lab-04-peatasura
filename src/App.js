@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { CourseCard } from "./components/CourseCard";
 
 function App() {
   const grade = ["A", "B+", "B", "C+", "C", "D+", "D", "F", "W"];
@@ -45,11 +46,74 @@ function App() {
       </h1>
       <div className="h-2/3 md:w-2/4 p-3 rounded-lg mx-auto overflow-auto">
         <h1 className="text-2xl my-3">My courses</h1>
-        {/* TODO display courses */}
+        {/* TODO display courses */
+          <p id = "io">
+
+          </p>
+        }
+
+
+      
+        </div>
+        {/*grade.map((item)=>{
+          
+          return <p>{item}</p>
+    
+        })*/}
+        {/* TODO add course input form */
+        
+            <form  align=  "center">
+            
+              <label for ="name">Subject</label>
+              <input type="text " placeholder="ชื่อวิชา" id = "name"></input>
+              <label for ="name">SubjectID</label>
+              <input type="text " placeholder="รหัสวิชา" id = "nameID"></input>
+              <label for ="gpa">GPA</label>
+              <select id = "gpa" name ="gpa">
+              {/*
+                    <option value="4">A</option>
+                    <option value="3.5">B+</option>
+                    <option value="3">B</option>
+                    <option value="2.5">C+</option>
+                    <option value="2">C</option>
+                    <option value="1.5">D+</option>
+                    <option value="1">D</option>
+                    <option value="0">F</option>
+                */
+              }
+                {grade.map((item) => (
+                <option value = {grade.value}>{item}</option>
+                 ))}
+
+              </select>
+              <label for ="Unit">Unit</label>
+            <select name ="Unit" id = "Unit">
+                  {
+                    credit.map((item)=>(
+                      <option value ={credit.value}>{item}</option>
+                    ))
+                  }
+               {
+                /*
+                 <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+                 */
+               }
+               
+              
+         
+            </select>
+            <button type="button"  id = "submit" name="submit" buttonClicked={CourseCard} >Add Subject</button>
+          
+            
+          </form>
+        
+          
+        }
+        {/* TODO display calculated GPA */}
       </div>
-      {/* TODO add course input form */}
-      {/* TODO display calculated GPA */}
-    </div>
+    
   );
 }
 
