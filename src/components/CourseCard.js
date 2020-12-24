@@ -1,8 +1,27 @@
 
 export const CourseCard = (props) => {
   // TODO: design HTML component that displays a course as a "card" on the webpage.
-  let x = document.getElementById("name");
-  let sh = document.getElementsByID("io").innerHTML+=x;
-  return (document.getElementsByID("io").innerHTML+=x);
+ 
+ 
+  return(
+    <>
+    <div class="CourseCard">
+      <td>
+        <div class="tag">
+          <p>Subject : {props.subj}</p>
+          <p>GPA : {props.grade}</p>
+          <p>Unit : {props.credit}</p>
+        </div>
+      </td>
+      <td>
+      <div>
+        <button  class="btn" onClick = {() =>{
+            props.del(props.subj)
+        }}>del</button></div>
+      </td>
+    </div>
+  </>);
+  
+
 };
 
