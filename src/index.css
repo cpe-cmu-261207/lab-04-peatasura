@@ -7,12 +7,23 @@ body {
     background-size: cover;
  
 }
-
+.btn{
+  transition-duration: 0.4s;
+  background-color:#f44336; /* Green */
+  
+border: none;
+color: black;
+padding: 6px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+}
   button{
     transition-duration: 0.4s;
-    background-color:#f44336; /* Green */
+    background-color:purple; /* Green */
   border: none;
-  color: white;
+  color: black;
   padding: 6px 32px;
   text-align: center;
   text-decoration: none;
@@ -24,19 +35,53 @@ body {
     background-color: #4CAF50; /* Green */
     color: white;
   }
-.CourseCard{
+/*.CourseCard{
   
   border: 5px outset red;
   background-color: blue;
   text-align: center;
+}*/
+.gpaS { 
+  position: absolute;
+  left: 100px;
+  top: 150px;
+  left: 40%;
+  right: 50%;
+  top:85%;
+  /*top :50%;*/
+  height: 100px;
+  width: 350px;
+  
+  border: 10px outset rosybrown; 
+  background-color: rgb(236, 179, 74);
 }
+.wow{
+  font-size: 64px;
+  text-align: center;
 
-.CourseCard.btn{
+}
+.CourseCard { 
+  height: 100px;
+  position: relative;
+  border: 10px outset red; 
+  background-color: royalblue;
+}
+/*.CourseCard.btn{
  
     margin: 0;
     position: absolute;
     top: 0%;
     left: 100%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  
+}*/
+.pos{
+ 
+    margin: 0;
+    position: absolute;
+    top: 25%;
+    left: 93%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   

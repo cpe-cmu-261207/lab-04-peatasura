@@ -139,7 +139,7 @@ function App() {
               
          
             </select>
-            <button type="button"  id = "submit" name="submit" onClick={addCourse} >Add Subject</button>
+            <button class = "in"type="button"  id = "submit" name="submit" onClick={addCourse} >Add Subject</button>
           
             
           </form>
@@ -148,7 +148,13 @@ function App() {
         
         {/* TODO display calculated GPA */}
         {
-        <p>GPA :{GPA.toFixed(2)}</p>
+          <div class = "gpaS" >
+            <div class = "wow">
+               <p>GPA :{GPA.toFixed(2)}</p>
+            </div>
+       
+        </div>
+      
       }
       
         </div>

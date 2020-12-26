@@ -14,10 +14,10 @@ export const CourseCard = (props) => {
         </div>
       </td>
       <td>
-      <div>
+      <div class="pos">
         <button  class="btn" onClick = {() =>{
             props.del(props.subj)
-        }}>del</button></div>
+        }}>X</button></div>
       </td>
     </div>
   </>);
